@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bagel Studio: Blog - IP Rights</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="stylesheet" href="Public/CSS/style.css" />
+    <script type="text/javascript" src="Public/JS/app.js" defer></script>
+  </head>
+
+  <body>
+    <!--Sidebar-->
+    <nav id="sidebar">
+      <ul>
+        <li>
+          <span class="logo"><h1>Bagel Studio</h1></span>
+          <button onclick="toggleSidebar()" id="toggle-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e3e3e3"
+            >
+              <path
+                d="M440-240 200-480l240-240 56 56-183 184 183 184-56 56Zm264 0L464-480l240-240 56 56-183 184 183 184-56 56Z"
+              />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <a href="Index.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e3e3e3"
+            >
+              <path
+                d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"
+              />
+            </svg>
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <button onclick="toggleSubMenu(this)" class="dropdown-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e3e3e3"
+            >
+              <path
+                d="M240-120q-17 0-28.5-11.5T200-160v-40h-80q-33 0-56.5-23.5T40-280v-440q0-33 23.5-56.5T120-800h720q33 0 56.5 23.5T920-720v440q0 33-23.5 56.5T840-200h-80v40q0 17-11.5 28.5T720-120H240ZM120-280h720v-440H120v440Zm80-80h560L580-600 440-420 340-540 200-360Zm-80 80v-440 440Z"
+              />
+            </svg>
+            <span>Portfolio</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e3e3e3"
+            >
+              <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+            </svg>
+          </button>
+          <ul class="sub-menu">
+            <div>
+              <li><a href="#">Previous Work</a></li>
+              <li><a href="index.html#current-projects">Current Projects</a></li>
+            </div>
+          </ul>
+        </li>
+        <li>
+          <button onclick="toggleSubMenu(this)" class="dropdown-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e3e3e3"
+            >
+              <path
+                d="M160-200v-440 440-15 15Zm0 80q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v171q-18-13-38-22.5T800-508v-132H160v440h283q3 21 9 41t15 39H160Zm240-600h160v-80H400v80ZM720-40q-83 0-141.5-58.5T520-240q0-83 58.5-141.5T720-440q83 0 141.5 58.5T920-240q0 83-58.5 141.5T720-40Zm20-208v-112h-40v128l86 86 28-28-74-74Z"
+              />
+            </svg>
+            <span>Experience</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e3e3e3"
+            >
+              <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+            </svg>
+          </button>
+          <ul class="sub-menu">
+            <div>
+              <li><a href="#">Skills</a></li>
+              <li><a href="#">Work Experience</a></li>
+              <li><a href="#">Awards</a></li>
+            </div>
+          </ul>
+        </li>
+        <li class="active">
+          <a href="index.html#blog-posts">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e3e3e3"
+            >
+              <path
+                d="M400-400h160v-80H400v80Zm0-120h320v-80H400v80Zm0-120h320v-80H400v80Zm-80 400q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"
+              />
+            </svg>
+            <span>Blog</span>
+          </a>
+        </li>
+        <li>
+          <a href="Contact.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e3e3e3"
+            >
+              <path
+                d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"
+              />
+            </svg>
+            <span>Contact</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="section">
+      <div class="SectionTitle">
+      <h2>Intellectual Property Rights in the Creative Industry:</h2>
+      <h4>IP rights and their importance in the creative industries</h4>
+    </div>
+    <div class="container">
+      <h3>Introduction</h3>
+      <p>
+        For many new creators, IP can be a complex or overly legal concept. Yet, it provides the 
+        framework that sustains creative work—protecting our art, code, stories, and designs from unauthorised use. 
+        In the game industry, 
+        where collaboration and innovation are ongoing, understanding IP isn't optional; it's vital.
+      </p>
+    </div>
+    <div class="container">
+      <h3>So what exactly is Intellectual Property, and how does it matter in a field that thrives on innovation?</h3>
+      <p>
+        Intellectual Property in simple terms, refers to the legal rights that protect creations of the mind, 
+        such as inventions, designs, symbols, images, literary and artistic works used in commerce. 
+        Like other forms of property, it can be owned, bought, sold, licensed, or stolen. 
+        The key difference being that IP is <strong>intangible</strong> - it is created from ideas. 
+      </p>
+      <p>
+        In the creative industries, ideas are currency. Whether you're producing music, film, fashion, or video games, 
+        your value often depends on the originality of what you create. Intellectual Property (IP) rights matter 
+        because they transform ideas into assets that can be <strong>owned, protected, and monetised</strong> — 
+        allowing creators to build sustainable careers rather than see their work copied or exploited.
+      </p>
+      <p>
+        There are many types of Intellectual Property, but for the Creative Industry there are five main forms:
+      </p>
+      <p>
+        - <strong>Copyright</strong> protects creative expressions like code, artwork, and music.
+        <br>
+        - <strong>Trademarks</strong> safeguard names, logos, and branding.
+        <br>
+        - <strong>Patents</strong> cover inventions or technical innovations.
+        <br>
+        - <strong>Design Rights</strong>  protect the visual appearance of products.
+        <br>
+        - <strong>Trade Secrets</strong> protect confidential information, such as proprietary tools or workflows.
+      </p>
+      <p>
+        At their core, <strong>IP rights ensure that creators receive recognition and reward for their work</strong>.
+      </p>
+    </div>
+
+    <div class="container">
+      <h3>Why IP Rights Matter in the Creative Industries</h3>
+      <p>
+        IP isn't just about defence — it's a system that drives growth. It motivates developers, studios, and artists to
+         <strong>take creative risks</strong>, 
+        understanding their work can't simply be stolen or replicated without consequence.
+        <br>
+        When protected ideas can be safely shared, they can also be <strong>licensed, sold, or adapted</strong>, 
+        creating a cycle of collaboration and profit that sustains the entire industry.
+      </p>
+      <p>
+        Prominent examples in the gaming sphere are <em>Minecraft</em> and <em>Five Nights at Freddy's</em>. 
+        These creative works have grown into enormous properties, expanding from games into books, 
+        merchandise, collaborations, and even movies. Their values don't stem solely from gameplay, 
+        but also from the Intellectual 
+        Property rights that establish ownership of the characters, universe, and creative concepts behind them.
+      </p>
+      <p>
+        For developers, IP safeguards not only their work but also their reputation. It offers clarity in collaborations 
+        and helps prevent disputes over ownership — something that can make or break a project.
+      </p>
+      <p>
+        Intellectual property (IP) is not without controversy. Some argue that large corporations sometimes use IP law as a barrier to competition
+         — building “walls” around ideas that might not be genuinely original.
+        <br>
+         For emerging developers, this tension is real. IP can feel empowering when it protects their own work — 
+         but intimidating when it's employed to fence off entire categories of creative expression.
+      </p>
+      <p>
+        <strong>Recent examples in the industry highlight how these issues play out on a larger scale:</strong>
+      </p>
+      <p>
+        <strong>Nintendo vs. Palworld (2024-25)</strong>
+        <br>
+        After <em>Palworld's</em> explosive success, Nintendo began filing patents around creature-catching 
+        mechanics, sparking debate on whether common gameplay ideas should be patentable. 
+        Critics argue that such claims risk limiting creative expression across the entire genre.
+        <br>
+        <strong>Warner Bros. and the “Nemesis System” Patent (2021)</strong>
+        <br>
+        By patenting its AI-driven enemy hierarchy system from <em>Shadow of Mordor</em>, Warner Bros. 
+        faced backlash for potentially 
+        stifling other developers from experimenting with dynamic storytelling mechanics.
+        <br>
+        <strong>Disney and AI Training Data (2025)</strong>
+        <br>
+        Disney has taken legal action against AI companies using its characters and storylines to train 
+        generative models. This raises important questions about creativity in the age of AI — who owns the data, 
+        and can machines “learn” from copyrighted art without permission?
+      </p>
+      <p>
+        Each case highlights the fine line between <strong>protection and restriction</strong>. For emerging creators, 
+        these examples 
+        are reminders that IP can empower innovation (or fence it off) depending on how it's used.
+      </p>
+    </div>
+
+    <div class="container">
+      <h3>Do IP Rights Stifle Creativity?</h3>
+      <p>
+        While IP protection is essential, there's growing debate 
+        about whether it sometimes limits creativity — especially when it's used too broadly.
+      </p>
+      <p>
+        In game development, creativity is often iterative — 
+        new ideas build on existing ones. Every platformer owes something to Mario, and every open world 
+        owes something to <em>Zelda</em> or <em>GTA</em>. The challenge is to innovate within inspiration — <em>to transform rather 
+        than copy.</em>
+      </p>
+      <p>
+        When companies patent mechanics or claim ownership over common ideas, 
+        innovation can become restricted to those with legal power. 
+        The <strong>Nintendo</strong> and <strong>Warner Bros</strong>. examples show how large studios can dominate creative space, 
+        leaving smaller teams hesitant to experiment in fear of infringement.
+      </p>
+      <p>
+        IP should ideally protect the <em>expression</em> of a concept, not the <em>concept itself</em>. When applied this way, 
+        it doesn't stifle creativity, it protects the uniqueness of execution. 
+        For emerging developers, the key is balance: 
+        learning to respect IP boundaries while still experimenting boldly within them. 
+      </p>
+    </div>
+
+    <div class="container">
+      <h3>Finding Balance as a Creator</h3>
+      <p>
+        As someone new to the game industry, I really appreciate the delicate balance creators need to strike. 
+        On one side, IP provides a way to safeguard our work from misuse or exploitation, 
+        which is especially vital for small studios and freelancers who depend on their originality to shine. 
+        On the other side, it's noticeable how big corporations might leverage these laws to overshadow others or 
+        patent mechanics that could spark new ideas.
+      </p>
+      <p>
+        Recent disputes highlight how blurred the line has become between inspiration and infringement. 
+        These examples serve as a reminder that IP should never be about claiming ownership of ideas themselves, 
+        but rather about protecting the expression of those ideas.
+      </p>
+      <p>
+        The future of creativity — particularly in interactive and digital media — 
+        depends on maintaining this balance. IP must continue to safeguard passion and 
+        originality while remaining adaptable to new technologies such as AI.
+      </p>
+      <p>
+        I believe IP shouldn't hinder creativity — it should <strong>promote it</strong>. It should give creators 
+        the confidence to share, collaborate, and experiment, without fear that their contributions will be 
+        erased or exploited. For young developers like me, understanding IP isn't just about legal protection; 
+        it's about <strong>creative empowerment</strong>. It's about recognising the value of what I make, while still appreciating the 
+        importance of openness and collaboration that drive the entire creative world forward.
+      </p>
+    </div>
+
+  </div>
+
+
+</body>
