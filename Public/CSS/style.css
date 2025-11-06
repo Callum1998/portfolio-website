@@ -34,6 +34,27 @@ body {
   grid-template-columns: auto 1fr;
 }
 
+#blog{
+  background-color: var(--base-clr);
+  color: var(--text-clr);
+  display: grid;
+  grid-template-columns:  auto 1fr;
+  padding: 0%;
+}
+
+.rightCards{
+  background: var(--line-clr);
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  display: block;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+
 #sidebar {
   box-sizing: border-box;
   height: 100vh;
@@ -163,11 +184,29 @@ main p {
 .container {
   border-bottom: 1px solid var(--line-clr);
   padding: min(3em, 15%);
+  padding-left: min(10em, 20%);
+  padding-right: min(10em, 20%);
+
 
   h2,
   p {
     margin-top: 1em;
   }
+}
+
+.container > img {
+  width: 100%;
+  height: auto;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.grid > img {
+  width: 100%;
+  height: auto;
 }
 
 .intro {
@@ -189,6 +228,26 @@ main p {
   }
 }
 
+.main-content {
+  background: var(--hover-clr);
+}
+
+@media (max-width: 1200px) {
+  #blog {
+    grid-template-columns: 1fr;
+  }
+  .rightCards {
+    border-left: none;
+    border-top: 1px solid var(--line-clr);
+    margin-top: 2rem;
+
+    display: flex;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 800px) {
   body {
     grid-template-columns: 1fr;
@@ -198,6 +257,8 @@ main p {
   }
   .container {
     border: none;
+    padding-left: min(3em, 10%);
+    padding-right: min(3em, 10%);
   }
   #sidebar {
     height: 60px;
