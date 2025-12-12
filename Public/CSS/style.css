@@ -202,6 +202,11 @@ main p {
 .grid{
   display: grid;
   grid-template-columns: auto auto;
+  border-bottom: 1px solid var(--line-clr);
+}
+
+.grid .container {
+  border-bottom: none;
 }
 
 .grid > img {
